@@ -4,7 +4,7 @@
 
 
 void make_table_em(int* c_loc, int* c_num, int lc, int* dataset, int rd, int cd, double *table, 
-					int* vec1, int* vec2, int* vec3, int len_vec1)
+					int* vec1, int* vec2, int* vec3, int len_vec1, int max)
 {
 	int i, l;
 	int loc;
@@ -29,9 +29,9 @@ void make_table_em(int* c_loc, int* c_num, int lc, int* dataset, int rd, int cd,
     memcpy(update_t, table, nct*sizeof(double));
     memcpy(current_t, table, nct*sizeof(double));
 	for (i=0; i<2; i++) c_prob[i]=0;
-
+//printf("max_iter %d",max);
 	// iteration & comparison
-	while (iteration<30 && fabs(update_total)>0.001)
+	while (iteration<max && fabs(update_total)>0.001)
 	{
 		iteration++;
 		vec2_start=0;
@@ -145,7 +145,7 @@ void err_rate(int* comb, int* rcomb, int* ccomb,
               int* train, int* rt, int* ct, int* test, int *rtest,
               double* threshold,
               double* err_train, double* err_test, int* na_method,
-			  int* vec1, int* vec2, int* vec3, int* n_vec1)
+			  int* vec1, int* vec2, int* vec3, int* n_vec1, int* max_iter)
 {
 
     int level = 3;
@@ -192,7 +192,7 @@ void err_rate(int* comb, int* rcomb, int* ccomb,
             } else if (*na_method==2)	{
                     make_table_available(c_loc, c_num, *rcomb, train, *rt, *ct, missing_t_train,&case_train,&control_train);
             } else if (*na_method==3){
-				make_table_em(c_loc, c_num, *rcomb, train, *rt, *ct, missing_t_train, vec1, vec2, vec3, len_vec1);
+				make_table_em(c_loc, c_num, *rcomb, train, *rt, *ct, missing_t_train, vec1, vec2, vec3, len_vec1,*max_iter);
             }
 
             
@@ -204,7 +204,7 @@ void err_rate(int* comb, int* rcomb, int* ccomb,
             } else if (*na_method==2)	{
                     make_table_available(c_loc, c_num, *rcomb, test, *rtest, *ct, missing_t_test,&case_test,&control_test);
             } else if (*na_method==3){
-                    make_table_em(c_loc, c_num, *rcomb, test, *rtest, *ct, missing_t_test, vec1, vec2, vec3, len_vec1);
+                    make_table_em(c_loc, c_num, *rcomb, test, *rtest, *ct, missing_t_test, vec1, vec2, vec3, len_vec1,*max_iter);
             }
 
 
