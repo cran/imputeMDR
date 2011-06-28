@@ -24,11 +24,9 @@
     \item{\code{snp10}}{a numeric vector}
   }
 }
-\details{
-}
-\source{
-}
+
 \references{
+Namkung J, Elston RC, Yang JM, Park T. "Identification of gene-gene interactions in the presence of missing data using the multifactor dimensionality reduction method" Genet Epidemiol. 2009 Nov;33(7):646-56.
 }
 \examples{
 data(incomplete)

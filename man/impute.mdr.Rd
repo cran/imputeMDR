@@ -24,24 +24,21 @@ impute.mdr(dataset, colresp, cs, combi, cv.fold = 10, na.method = 0, max_iter = 
   \item{max_iter}{The number of maximum iteration in EM impute approach (na.method=3). In order to apply one-step EM approach, set this argument as 1}
   \item{randomize}{Logical. If 'TRUE' the cross validation sets are randomized }
 }
-\details{
-}
 \value{
   \item{min.comb }{Marker combinations with the minimum error rate in each cross validation}
   \item{train.erate }{Training errors for selected marker combination}
   \item{test.erate }{Test error of the selected marker combination}
   \item{best.combi }{The best combination that was selected most frequently across k-fold cross validation}  
 }
-\references{Namkung J, Elston RC, Yang JM, Park T. "Identification of gene-gene interactions in the presence of missing data using the multifactor dimensionality reduction method" Genet Epidemiol. 2009 Nov;33(7):646-56.
+\references{
+Namkung J, Elston RC, Yang JM, Park T. "Identification of gene-gene interactions in the presence of missing data using the multifactor dimensionality reduction method" Genet Epidemiol. 2009 Nov;33(7):646-56.
  }
 \author{
 Junghyun Namkung, Taeyoung Hwang, MinSeok Kwon, Sunggon Yi and Wonil Chung
 
 Maintainer: Junghyun Namkung <jh.namkung@gmail.com>
  }
-\note{ 
-}
-\seealso{ }
+
 \examples{
 ## sample data with missing values
 data(incomplete)

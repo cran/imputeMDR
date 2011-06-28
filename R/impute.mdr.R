@@ -149,6 +149,6 @@ function(dataset, colresp, cs, combi, cv.fold = 10, na.method=0, max_iter=30, ra
     return(list(cv.result=cv.result,best=z$best.combi))
 }
 
-.First.lib<-function(lib,pkg){
+.onLoad <- function(lib,pkg){
   library.dynam("imputeMDR",pkg,lib)
 }

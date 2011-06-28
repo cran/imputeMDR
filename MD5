@@ -1,8 +1,8 @@
-b00d283f5380613792f418d89576c101 *DESCRIPTION
-9fdfeb11f7ddba6f3aab9aaa6b1ac5dd *NAMESPACE
-5f9f9d9fa579911c894394541c689d22 *R/impute.mdr.R
+fd0604b65a2f99834d693f9966807d46 *DESCRIPTION
+b78e14a4ad800d82e5f7be78e74f8484 *NAMESPACE
+b0df48599092772055f736627dcb75f0 *R/impute.mdr.R
 ee55bbfd87535a79320f68b7560a355c *data/incomplete.rda
-0b5c346c99cdbe184a71a863d2e64147 *man/impute.mdr.Rd
-f8fb5cdd0cceb57a4eaa0a1993f7cff1 *man/imputeMDR-package.Rd
-693a9ae16e053654ec91c1d0dafac1b6 *man/incomplete.Rd
+f1490074a3296ac62481b71d54cf5b3f *man/impute.mdr.Rd
+ffddc67949d7392052edf26dbbd2bd82 *man/imputeMDR-package.Rd
+3dccf7dc030caab481f716be664695e1 *man/incomplete.Rd
 2cb9b9abdaed880f26b40a84228a7a07 *src/make_table.c

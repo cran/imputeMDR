@@ -31,5 +31,3 @@ Namkung J, Elston RC, Yang JM, Park T. "Identification of gene-gene interactions
 \seealso{
 \code{\link[imputeMDR]{impute.mdr}}
 }
-\examples{
-}
