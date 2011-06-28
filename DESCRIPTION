@@ -2,8 +2,8 @@ Package: imputeMDR
 Type: Package
 Title: The Multifactor Dimensionality Reduction (MDR) Analysis for
         Imcomplete Data
-Version: 1.1
-Date: 2010-05-17
+Version: 1.1.1
+Date: 2011-06-28
 Author: Junghyun Namkung, Taeyoung Hwang, MinSeok Kwon, Sunggon Yi and
         Wonil Chung
 Maintainer: Junghyun Namkung <jh.namkung@gmail.com>
@@ -13,6 +13,6 @@ Description: This package provides various approaches to handling
         studies
 License: GPL (>= 2)
 LazyLoad: yes
-Packaged: Thu May 20 09:59:13 2010; jh.namkung
+Packaged: 2012-10-29 08:59:01 UTC; ripley
 Repository: CRAN
-Date/Publication: 2010-05-22 07:32:37
+Date/Publication: 2012-10-29 08:59:01

@@ -12,8 +12,8 @@ This provides various approaches to handling missing values for the MDR analysis
 \tabular{ll}{
 Package: \tab imputeMDR\cr
 Type: \tab Package\cr
-Version: \tab 1.1\cr
-Date: \tab 2010-05-17\cr
+Version: \tab 1.1.1\cr
+Date: \tab 2011-06-28\cr
 License: \tab GPL (>2) \cr
 LazyLoad: \tab yes\cr
 }

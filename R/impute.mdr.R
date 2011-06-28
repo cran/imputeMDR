@@ -1,6 +1,6 @@
 .PACKAGE <- "imputeMDR" 
 
-`impute.mdr` <-
+impute.mdr <-
 function(dataset, colresp, cs, combi, cv.fold = 10, na.method=0, max_iter=30, randomize = FALSE) {
 
       vec.matches<- function (vec,mat){
@@ -133,7 +133,7 @@ function(dataset, colresp, cs, combi, cv.fold = 10, na.method=0, max_iter=30, ra
     }
 	# 5.15.2010 : print SNP names of input data in the results
     # z$min.comb[z$min.comb >= colresp] <- z$min.comb[z$min.comb >= colresp] + 1
-	z$min.comb <- matrix(snp.names[z$min.comb],2,)
+	z$min.comb <- matrix(snp.names[z$min.comb],combi,)
 
     ## maximum count of repeatedly selecting the same model across CV
   
@@ -149,6 +149,6 @@ function(dataset, colresp, cs, combi, cv.fold = 10, na.method=0, max_iter=30, ra
     return(list(cv.result=cv.result,best=z$best.combi))
 }
 
- .First.lib<-function(lib,pkg){
+.First.lib<-function(lib,pkg){
   library.dynam("imputeMDR",pkg,lib)
 }
